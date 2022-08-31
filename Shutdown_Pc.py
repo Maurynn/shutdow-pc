@@ -36,10 +36,6 @@ def reset(validador=True):
         tempo = '00:00'
         cronometro.text_label['text'] = tempo
         
-
-        
-        
-
 #MÓDULO CUSTOMTKINTER[ESTE MÓDULO DEIXA A INTERFACE MAIS MODERNA]
 customtkinter.set_appearance_mode("dark")
 customtkinter.set_default_color_theme("blue")
