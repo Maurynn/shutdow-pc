@@ -45,9 +45,9 @@ app = customtkinter.CTk()
 app.geometry("260x350")
 app.title("Dev_by_Mauro")
 
-frame = customtkinter.CTkFrame(master=app, width=250, height=150)
+frame = customtkinter.CTkFrame(master=app, width=250, height=150, corner_radius=10, border_width=1, border_color='cyan')
 frame.pack(padx=10, pady=10, fill="both", expand=True)
-frame2 = customtkinter.CTkFrame(master=app, width=250, height=50)
+frame2 = customtkinter.CTkFrame(master=app, width=250, height=50, corner_radius=10, border_width=1, border_color='cyan')
 frame2.pack(padx=10, pady=10, fill="both", expand=True)
 
 label = customtkinter.CTkLabel(
@@ -55,11 +55,11 @@ label = customtkinter.CTkLabel(
 label.pack(pady=6, padx=10)
 
 button = customtkinter.CTkButton(
-    master=frame, text="DESLIGAR", text_color='white', width=12, command=desligar)
+    master=frame, text="DESLIGAR", text_color='white', width=12, corner_radius=10, border_width=1, command=desligar)
 button.pack(pady=5, padx=10)
 
 button = customtkinter.CTkButton(
-    master=frame, text="REINICIAR", text_color='white', width=12, command=reiniciar)
+    master=frame, text="REINICIAR", text_color='white', width=12, corner_radius=10, border_width=1, command=reiniciar)
 button.pack(pady=5, padx=10)
 
 timer = customtkinter.CTkLabel(
@@ -74,7 +74,7 @@ cronometro = customtkinter.CTkLabel(
     master=frame2, text='00:00', text_color='white', text_font='fixedsys 18')
 cronometro.pack(pady=6, padx=10)
 button = customtkinter.CTkButton(master=frame2, text="INICIAR",
-                                 text_color='white', width=10, text_font='Bahnschrift 9', command=lambda:[tick(), aviso()])
+                                 text_color='white', width=10, text_font='Bahnschrift 9', corner_radius=10, border_width=1, command=lambda:[tick(), aviso()])
 button.pack(pady=6, padx=10)
 
 
